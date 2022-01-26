@@ -30,4 +30,4 @@ if save_me == help_me[4]:
     print(save_me + " found at index " + str(4))
     lets_go = lets_go + 1
 
-print(str(lets_go) + " instances of " + str(save_me) + " found at " + str(help_me))
+print(str(lets_go) + " instances of " + str(save_me) + " found in " + str(help_me))
