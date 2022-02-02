@@ -1,4 +1,4 @@
-"""One Shot Wordle Assignemnt"""
+"""One Shot Wordle Assignemnt."""
 __author__ = "730319038"
 
 secret_word: str = "python"
@@ -20,7 +20,7 @@ while i < len(secret_word):
             if guess[i] == secret_word[ii]:
                 word = True
             ii = ii + 1
-        if word == True:
+        if word:
             emoji_result += YELLOW_BOX
         else:
             emoji_result += WHITE_BOX
@@ -28,12 +28,5 @@ while i < len(secret_word):
 print(emoji_result)
 if len(guess) == len(secret_word) and guess != secret_word:
     print("Not quite. Play again soon!")
-
-
-
-
-
-
-
 if guess == secret_word:
     print("Woo! You got it!")
